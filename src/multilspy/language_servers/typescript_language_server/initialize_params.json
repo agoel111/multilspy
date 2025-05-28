@@ -894,8 +894,7 @@
                     "scope": "workspace"
                 }
             }
-        },
-        "tsserver": { "useSyntaxServer": "never" }
+        }
     },
     "trace": "verbose",
     "workspaceFolders": [
