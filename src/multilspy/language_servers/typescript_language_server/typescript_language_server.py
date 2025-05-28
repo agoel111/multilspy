@@ -67,7 +67,7 @@ class TypeScriptLanguageServer(LanguageServer):
 
         runtime_dependencies = d.get("runtimeDependencies", [])
         original_path = os.path.dirname(__file__)
-        src_index = original_path.find('site-packages/')
+        src_index = original_path.find('src/')
         relative_path = original_path[src_index:]  # includes 'src/...'
         new_path = os.path.join('tmp', relative_path)
         tsserver_ls_dir = os.path.join(new_path, "static", "ts-lsp")
