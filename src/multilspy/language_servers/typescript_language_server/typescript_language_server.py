@@ -69,7 +69,7 @@ class TypeScriptLanguageServer(LanguageServer):
         original_path = os.path.dirname(__file__)
         src_index = original_path.find('site-packages/')
         relative_path = original_path[src_index:]  # includes 'src/...'
-        new_path = os.path.join('tmp', relative_path)
+        new_path = os.path.join('/tmp', relative_path)
         tsserver_ls_dir = os.path.join(new_path, "static", "ts-lsp")
         tsserver_executable_path = os.path.join(tsserver_ls_dir, "typescript-language-server")
 
