@@ -134,7 +134,7 @@ class TypeScriptLanguageServer(LanguageServer):
                                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                         else:
                             user = pwd.getpwuid(os.getuid()).pw_name
-                            subprocess.run(cmd, shell=True, check=True, cwd=tsserver_ls_dir, user=user,
+                            subprocess.run(cmd, shell=True, check=True, cwd=tsserver_ls_dir,
                                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                         print(f"[INFO] Successfully installed dependency with command: {cmd}")
                     except subprocess.CalledProcessError as cmd_e:
