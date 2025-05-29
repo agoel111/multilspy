@@ -45,7 +45,7 @@ class TypeScriptLanguageServer(LanguageServer):
         )
         self.server_ready = asyncio.Event()
 
-    def setup_runtime_dependencies(self, config: MultilspyConfig) -> str:
+    def setup_runtime_dependencies(self, logger: MultilspyLogger, config: MultilspyConfig) -> str:
         """
         Setup runtime dependencies for TypeScript Language Server with detailed debugging using print statements.
         """
